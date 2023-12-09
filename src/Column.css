@@ -31,7 +31,6 @@ h4 {
     margin-right: -5px;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .column-img {
         height: 10px;
