@@ -121,7 +121,11 @@ const Column = ({ title, tickets, groupingOption }) => {
   }
   if (groupingOption === "status") {
     let statusIcon;
-    statusIcon = `./status/${tickets[0].status}.png`;
+    let status_ = tickets[0].status;
+    if(status_ === "In progress"){
+      status_ = "In-progress";
+    }
+    statusIcon = `./status/${status_}.png`;
     return (
       <div className="column">
         <h4>
