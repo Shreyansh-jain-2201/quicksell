@@ -1,0 +1,120 @@
+/* Base styles */
+.ticket-id {
+  font-size: 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #95999c;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 10px;
+  text-align: left;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fffefe;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  height: 75px;
+  /* max-height: 150px; */
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 12px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: start;
+
+}
+
+.icon-button,
+.icon-text-button {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.icon-text-button {
+  margin-left: 5px;
+}
+
+.icon {
+  
+  width: 10px;
+  height: 10px; 
+  margin-right: 4px; 
+}
+.feature-text
+{
+  font-size: 10px;
+  
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 16px; 
+  }
+
+  .icon {
+    width: 16px; 
+    height: 16px;
+    margin-right: 3px; 
+  }
+}
+
+.profile-info {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.online-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green; /* Online status color */
+  margin-left: -12px;
+  margin-bottom: -23px;
+}
+
+.online-status.away {
+  background-color: orange; /* Away status color */
+}
+
+.online-status.offline {
+  background-color: red; /* Offline status color */
+}

@@ -1,0 +1,174 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f9;
+}
+.app {
+  text-align: center;
+}
+
+header {
+  background-color: #fffefe;
+  padding: 15px;
+  padding-left: 20px;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.options {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f8f8fa;
+  border-color: #fffefe;
+}
+
+label {
+  padding-top: -2px;
+  color: white;
+}
+
+select {
+  padding: 5px;
+}
+
+main {
+  padding: 20px;
+  background-color: #f5f5f9;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.column h2 {
+  color: #282c34;
+  border-bottom: 2px solid #282c34;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #fffefe;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown{
+  background-color : rgb(255, 255, 255);
+  position: absolute;
+  border: 1px solid #474a4d;
+  /* change border dimensions */
+  /* box-sizing: border-box; */
+  border-radius: 4px;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 200px;
+  overflow: hidden
+}
+.menu-item{
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: background 500ms;
+}
+.menu-item:hover{
+  background-color: #e8e8e8;
+}
+
+.display{
+  text-align : left
+}
+
+.button-drop{
+  background-color: #ffffff;
+  width: 200%;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid #474a4d;
+  cursor: pointer;
+  transition: background 500ms;
+  text-align: left;
+}
+button{
+  display: inline
+}
+.display-button{
+  display: flex;
+  justify-content: start;
+  background-color: #ffffff;
+  padding: auto;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid #474a4d;
+  cursor: pointer;
+  transition: background 500ms;
+  text-align: left;
+  width: 8%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.display-logo {
+  width: 15px;
+  margin-top: 1px;
+  border-radius: 4px;
+  margin-right: 0.4rem;
+}
+.display-text {
+  font-size: 14px;
+  margin-top: -30px;
+}
+
+.labels{
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: background 500ms;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  color: #8e8f90;
+  font-size: 14px;
+  margin-left: -20px;
+  margin-right: 40px;
+  width: 150%;
+  text-align: left;
+
+}
+option{
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  margin-left: -20px;
+  margin-right: 40px;
+  width: 200%;
+  text-align: left;
+  padding: -0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+
+  .button-drop,
+  .display-button,
+  .display-logo,
+  .labels,
+  option {
+    width: 100%; /* Take full width on smaller screens */
+  }
+}
