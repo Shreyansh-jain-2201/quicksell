@@ -60,7 +60,7 @@ const Column = ({ title, tickets, groupingOption }) => {
         </h4>
 
         {tickets.map((ticket) => (
-          <Card key={ticket.id} ticket={ticket} />
+          <Card key={ticket.id} ticket={ticket} groupingOption={groupingOption} />
         ))}
       </div>
     );
@@ -114,7 +114,7 @@ const Column = ({ title, tickets, groupingOption }) => {
         </h4>
 
         {tickets.map((ticket) => (
-          <Card key={ticket.id} ticket={ticket} />
+          <Card key={ticket.id} ticket={ticket} groupingOption={groupingOption}/>
         ))}
       </div>
     );
@@ -152,7 +152,7 @@ const Column = ({ title, tickets, groupingOption }) => {
         </h4>
 
         {tickets.map((ticket) => (
-          <Card key={ticket.id} ticket={ticket} />
+          <Card key={ticket.id} ticket={ticket} groupingOption={groupingOption}/>
         ))}
       </div>
     );
